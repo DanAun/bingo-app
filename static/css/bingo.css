@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #ff6a00, #ffcc00);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 3rem;
+    color: white;
+    margin-top: 2rem;
+    text-shadow: 2px 2px 5px #00000050;
+}
+
+h2 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+    grid-gap: 15px; /* Increased gap for more space */
+    padding: 20px;
+    background: #ffffffaa;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin-bottom: 3rem;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem; /* Reduced font size for better visibility */
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
+    padding: 10px;
+    box-sizing: border-box; /* Ensures padding is included in width/height */
+}
+
+.cell:hover {
+    background: #f0f0f0;
+}
+
+.marked {
+    background: #4CAF50; /* Green color for marked cells */
+    color: white;
+    text-decoration: line-through;
+    transform: scale(1.05);
+}
+
+@media (max-width: 700px) {
+    .grid {
+        grid-template-columns: repeat(3, 90px);
+        grid-gap: 10px; /* Adjust gap for smaller screens */
+    }
+    .cell {
+        width: 90px;
+        height: 90px;
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+}
