@@ -1,0 +1,12 @@
+services:
+  web:
+    build: .
+    image: app:latest
+    ports:
+      - "80:80"
+    volumes:
+      - .:/app
+      - db_data:/app/db.sqlite3
+
+volumes:
+  db_data:
