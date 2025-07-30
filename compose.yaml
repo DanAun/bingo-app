@@ -1,7 +1,7 @@
 services:
   web:
     build: .
-    image: app:latest
+    image: kebza/bingo-app:latest
     ports:
       - "80:80"
     volumes:
