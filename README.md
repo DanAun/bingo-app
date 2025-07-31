@@ -1,5 +1,3 @@
-Here's the updated README that reflects that the `docker-compose.yml` file is already in the root of your project:
-
 ## 🎉 Bingo App
 
 Welcome to the **Bingo App**! This app is designed for you and your friends to stay connected and have fun playing bingo together, no matter where you are.
