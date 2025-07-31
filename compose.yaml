@@ -5,8 +5,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - .:/app
-      - db_data:/app/db.sqlite3
+      - db_data:/app/database
 
 volumes:
   db_data:

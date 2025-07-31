@@ -4,7 +4,7 @@ import json
 import os
 
 app = Flask(__name__)
-DATABASE = 'db.sqlite3'
+DATABASE = 'database/db.sqlite3'
 
 # --- DATABASE HANDLING ---
 
