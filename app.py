@@ -40,7 +40,7 @@ if not os.path.exists(DATABASE):
 def index():
     return render_template("index.html")
 
-@app.route('/<name>')
+@app.route('/player/<name>')
 def bingo_card(name):
     db = get_db()
     db.execute("INSERT OR IGNORE INTO players (name) VALUES (?)", (name,))
