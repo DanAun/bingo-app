@@ -52,9 +52,10 @@ h2 {
     box-sizing: border-box; /* Ensures padding is included in width/height */
 }
 
-.cell:hover {
+.cell:hover:not(.marked) {
     background: #f0f0f0;
 }
+
 
 .marked {
     background: #4CAF50; /* Green color for marked cells */
